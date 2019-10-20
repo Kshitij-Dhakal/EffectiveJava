@@ -11,8 +11,11 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Minimize the Scope of local variable. Declare variable where it is first
+ * <h1>Minimize the Scope of local variable</h1>
+ * <p>
+ * Declare variable where it is first
  * used.
+ * </p>
  *
  * @author dhaka
  */
@@ -30,7 +33,7 @@ public class Item57 {
             doSomething(name);
         }
         //idiom for iterating when you need the iterator
-        for (Iterator<String> i = names.iterator(); i.hasNext();) {
+        for (Iterator<String> i = names.iterator(); i.hasNext(); ) {
             String name = i.next();
             doSomething(name);
         }
