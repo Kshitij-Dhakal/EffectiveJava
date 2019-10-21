@@ -1,4 +1,4 @@
-package book.general_programming;
+package book.gp;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,6 +14,10 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class Item59 {
     private static Random rnd = new Random();
+
+    private Item59() {
+
+    }
 
     //do not do this
     private static int notPreferredRandomNumberGenerator(int n) {

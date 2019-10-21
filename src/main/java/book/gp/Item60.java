@@ -1,4 +1,4 @@
-package book.general_programming;
+package book.gp;
 
 import java.math.BigDecimal;
 
@@ -7,6 +7,10 @@ import java.math.BigDecimal;
  * <p>The float and double types are particularly ill-suited for monetary calculation.</p>
  */
 public class Item60 {
+    private Item60() {
+
+    }
+
     public static void main(String[] args) {
         System.out.println(1.03 - 0.42);
         System.out.println(1.00 - 0.90);
@@ -23,8 +27,8 @@ public class Item60 {
         //do all calculations in cents avoiding floating points
         int itemBought = 0;
         int funds = 100;
-        for (int price = 0; funds>=price; price+=10) {
-            funds-=price;
+        for (int price = 0; funds >= price; price += 10) {
+            funds -= price;
             itemBought++;
         }
         System.out.println(itemBought + " item bought");

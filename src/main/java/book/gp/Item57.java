@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package book.general_programming;
+package book.gp;
 
 import java.util.Iterator;
 import java.util.List;
@@ -20,6 +15,9 @@ import java.util.logging.Logger;
  * @author dhaka
  */
 public class Item57 {
+
+    private Item57() {
+    }
 
     public static void main(String[] args) {
         List<String> names = List.of("Kshitij", "Subin", "Subash", "Lokesh");

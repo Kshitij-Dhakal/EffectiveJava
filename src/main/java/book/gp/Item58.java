@@ -1,4 +1,4 @@
-package book.general_programming;
+package book.gp;
 
 import java.util.*;
 
@@ -11,8 +11,12 @@ import java.util.*;
  */
 
 public class Item58 {
+
     private static Collection<Card.Suit> suits = Arrays.asList(Card.Suit.values());
     private static Collection<Card.Rank> ranks = Arrays.asList(Card.Rank.values());
+    private Item58() {
+
+    }
 
     public static void main(String[] args) {
         List<Card> deck = new ArrayList<>();
